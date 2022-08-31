@@ -266,3 +266,60 @@ h2{
   color: #fff;
   cursor: pointer;
 }
+
+.cell-form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#text-hours{
+  background-color: #fff;
+  height: 32px;
+  width: 150px;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(104, 103, 103);
+}
+
+.cell-form > select{
+  width: 160px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+.btn:active{
+  background-color: rgb(55, 55, 189);
+}
+.btn{
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 160px;
+  height: 30px;
+  color: white;
+  background-color: rgb(85, 85, 240);
+}
+
+.line{
+  text-decoration: line-through;
+}
+.cell-0{
+  background-color: #689976;
+}
+
+label{
+  font-size: 13px !important;
+}
+
+.finished{
+  width: 160px;
+  /* background-color: green; */
+  text-align: left;
+}
+
+.finished > label{
+  margin-right: 5px;
+}

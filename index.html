@@ -12,8 +12,8 @@
       <h2>TIME TABLE</h2>
       <div class="action">
         <div class="breadcrumb flat">
-          <a href="#" class="active">Time table</a>
-          <a href="#">Statistics</a>
+          <a href="" class="active">Time table</a>
+          <a href="./statistics.html">Statistics</a>
           <a href="#">Settings</a>
         </div>
       </div>
@@ -36,19 +36,38 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span id="close" class="close">&times;</span>
-            <p>Edit this</p>
             <!-- <input type="text" value="" id="textVal"> -->
-            <select name="" id="textVal">
-              <option value="HOPE">HOPE</option>
-              <option value="CMU/HOPE">CMU/HOPE</option>
-              <option value="AI AFRICA">AI AFRICA</option>
-              <option value="REVISION">REVISION</option>
-              <option value="PAUSE">PAUSE</option>
-              <option value="PPLT">PPLT</option>
-              <option value="REMOTE">REMOTE</option>
-              <option value="DEV-OPS">DEV-OPS</option>
-            </select>
-            <button class="btn" type="button">SAVE</button>
+            <div class="cell-form">
+              <input type="number" hidden id="index-hour">
+              <input type="number" hidden id="index-day">
+              <h4 style="color: black;">Edit this</h4>
+              <hr>
+              <br/>
+              <label style="color: black; margin-bottom: 5px;" for="text-hours">Hourse spent</label>
+              <input value="1.5" step="0.5" id="text-hours" min="1" max="5" type="number" placeholder="Hourse">
+              
+              <label style="color: black; margin-bottom: 5px;" for="textVal">Activity</label>
+              
+              <select name="" id="textVal">
+                <option value="HOPE">HOPE</option>
+                <option value="CMU/HOPE">CMU/HOPE</option>
+                <option value="AI AFRICA">AI AFRICA</option>
+                <option value="REVISION">REVISION</option>
+                <option value="PAUSE">PAUSE</option>
+                <option value="PPLT">PPLT</option>
+                <option value="REMOTE">REMOTE</option>
+                <option value="DEV-OPS">DEV-OPS</option>
+              </select>
+
+              <br>
+              <div  class="finished">
+                <label style="color: #000;" for="checked">Finished?</label>
+                <input type="checkbox" name="" id="checked">
+              </div>
+              <br>
+              <button class="btn" id="save-btn" type="button">SAVE</button>
+            </div>
+            
           </div>
 
         </div>
